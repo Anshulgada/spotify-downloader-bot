@@ -28,3 +28,5 @@ if __name__ == "__main__":
     if not path.exists("cache"):
         mkdir("cache")
     Mbot().run()
+
+print("\nmain.py working now...\n")
