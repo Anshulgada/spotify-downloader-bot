@@ -6,51 +6,63 @@
     "music",
     "music downloader"
   ],
-  "repository": "https://github.com/rozari0/NeedMusicRobot/",
+  "repository": "https://github.com/Anshulgada/Spotify-Downloader-Bot",
   "website": "https://t.me/NeedMusicRobot",
   "success_url": "https://t.me/NeedMusicRobot",
-  "env": {
-    "API_ID": {
+  "env":
+  {
+    "API_ID":
+    {
       "description": "Your Telegram API ID",
-      "value": ""
+      "value": "9711084"
     },
-    "API_HASH": {
+    "API_HASH":
+    {
       "description": "Get this value from my.telegram.org! Please do not steal",
-      "value": ""
+      "value": "dd650753f32158e91a03fe3b5298735f"
     },
-    "BOT_TOKEN": {
+    "BOT_TOKEN":
+    {
       "description": "Make a bot at http://telegram.dog/BotFather and get the token of your bot.Worth it. Get it.",
-      "value": ""
+      "value": "5366627705:AAFFSERaxP8YrONR4lxWxGwVDuR6voQkzx4"
     },
-    "OWNER_ID": {
+    "OWNER_ID":
+    {
       "description": "The ID of the owner of the bot",
-      "value": ""
+      "value": "1174366826"
     },
-    "SUDO_USERS": {
+    "SUDO_USERS":
+    {
       "description": "The ID of the sudo users of the bot",
       "value": "",
       "required": false
     },
-    "AUTH_CHATS": {
+    "AUTH_CHATS":
+    {
       "description": "The ID of the authorized chats of the bot",
       "value": "",
       "required": false
     },
-    "LOG_GROUP": {
+    "LOG_GROUP":
+    {
       "description": "The ID of the group to log to",
       "value": "",
       "required": false
     },
-    "SPOTIPY_CLIENT_SECRET": {
+    "SPOTIPY_CLIENT_SECRET":
+    {
       "description": "The client secret of the Spotify API",
-      "value": "0f02b7c483c04257984695007a4a8d5c"
+      "value": "c55a43eaeead42e99b6a6d01ab51cdd7"
     },
-    "SPOTIPY_CLIENT_ID": {
+    "SPOTIPY_CLIENT_ID":
+    {
       "description": "The client ID of the Spotify API",
-      "value": "4fe3fecfe5334023a1472516cc99d805"
+      "value": "4206c1710b394e6998131b642328ca22"
     }
   },
-  "buildpacks": [{
+
+  "buildpacks":
+  [{
     "url": "heroku/python"
   }]
 }

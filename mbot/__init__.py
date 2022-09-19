@@ -23,7 +23,6 @@ SOFTWARE.
 
 import logging
 from os import environ, mkdir, path, sys
-
 from dotenv import load_dotenv
 from pyrogram import Client
 
