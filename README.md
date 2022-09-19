@@ -45,6 +45,18 @@ To deploy this project run
 ### Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/rozari0/MusicDownloader/)
 
+# Variables
+
+`API_ID`  
+`API_HASH`api Id and hash get it from  [Telegram](https://my.telegram.org)
+`BOT_TOKEN`get it from [@BotFather](https://t.me/BotFather)
+`SPOTIPY_CLIENT_ID` &
+`SPOTIPY_CLIENT_SECRET`get it from [Spotify](https://developers.spotify.com)
+`LOG_GROUP` &
+`AUTH_CHATS`Get IDs add a group management bot and type /id
+`ARQ_API_KEY`Get it from @ARQRobot and paste [here](https://github.com/Masterolic/Spotify-Downloader/blob/38dcc1788a55542ae6ef686f78e644f312faefde/mbot/__init__.py#L61)
+`BUG`put your bug log group id there [click here](https://github.com/Masterolic/Spotify-Downloader/blob/9b718abd57474b9e8d1f0bdade92aae2da6e2e53/mbot/utils/mainhelper.py#L29)
+
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables to your config.env file
@@ -59,7 +71,15 @@ To run this project, you will need to add the following environment variables to
 `DATABASE_URL`
 `AUTH_CHATS`
 
+# DEPLOY
 
+Add your variables in [config.env](https://github.com/Masterolic/Spotify-repo/blob/4d98480ec837325d38eedd20886a748c5d6fa598/config.env#L12)
+
+*Step 1* ⚙️ `apt update && apt upgrade && apt install ffmpeg -y `
+
+*Step 2* ⚙️ `pip install --upgrade pip && pip install -r requirements.text`
+
+*Step 3* ⚙️ `python3 -m mbot`
 
 ## License
 
