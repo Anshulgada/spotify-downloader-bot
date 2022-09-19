@@ -88,3 +88,5 @@ class Mbot(Client):
     async def stop(self, *args):
         await super().stop()
         LOGGER.info("Bot Stopped, Bye.")
+
+print("\ninit.py working now...\n")
