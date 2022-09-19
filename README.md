@@ -1,5 +1,7 @@
 
 # Telegram Music Downloader
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+to+Spotify+Downloa+bot)](https://git.io/typing-svg)
+
 A Simple Music Downloader Bot For Telegram with Youtube Music, Spotify & Deezer Support.
 
 <p align="center">
@@ -9,16 +11,13 @@ A Simple Music Downloader Bot For Telegram with Youtube Music, Spotify & Deezer 
     <a href="https://GitHub.com/rozari0">
         <img src="http://ForTheBadge.com/images/badges/built-with-love.svg" alt="built-with-love">
     </a> <br>
-    <img src="https://img.shields.io/github/license/rozari0/MusicDownloader?style=for-the-badge&logo=appveyor" alt="LICENSE">
-    <img src="https://img.shields.io/github/contributors/rozari0/MusicDownloader?style=for-the-badge&logo=appveyor" alt="Contributors">
-    <img src="https://img.shields.io/github/repo-size/rozari0/MusicDownloader?style=for-the-badge&logo=appveyor" alt="Repository Size"> <br>
-    <img src="https://img.shields.io/badge/python-3.9-green?style=for-the-badge&logo=appveyor" alt="Python Version">
-    <img src="https://img.shields.io/github/issues/rozari0/MusicDownloader?style=for-the-badge&logo=appveyor" alt="Issues">
-    <img src="https://img.shields.io/github/forks/rozari0/MusicDownloader?style=for-the-badge&logo=appveyor" alt="Forks">
-    <img src="https://img.shields.io/github/stars/rozari0/MusicDownloader?style=for-the-badge&logo=appveyor" alt="Stars">
+
 </p>
 
+### ABOUT
+A Simple Music Downloader Bot For Telegram Spotify Support
 
+This bot is a clone of [@NeedMusicRobot](https://t.me/NeedMusicRobot)
 
 ## Demo
 
