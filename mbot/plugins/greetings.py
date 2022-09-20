@@ -41,13 +41,13 @@ async def start(client, message):
                 text="Repo", url="https://github.com/Anshulgada/spotify-downloader-bot"
             ),
             InlineKeyboardButton(text="Help", callback_data="helphome"),
-
+            InlineKeyboardButton(text="Connect with us", callback_data="connectwithus"),
             # InlineKeyboardButton
             #     (
             #     text="Connect with us", url=""
             # ),
 
-            InlineKeyboardButton(text="Connect with us", callback_data="connectwithus"),
+
 
         ],
     ]
@@ -144,9 +144,7 @@ async def help_home(_, query):
 
 @ Mbot.on_callback_query(filters.regex(r"connectwithus"))
 async def help_home(_, query):
-    button = [
-        [InlineKeyboardButton(text=i, callback_data=f"help_{i}")] for i in HELP
-    ]
+    button = [    ]
     await query.message.edit(
         f"You can connect via mail at anshulgada05@gmail.com",
         reply_markup=InlineKeyboardMarkup(button),
