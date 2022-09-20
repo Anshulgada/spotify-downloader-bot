@@ -141,12 +141,12 @@ async def help_home(_, query):
         f"Hello **{query.from_user.first_name}**, I'm **@MagSpotifyBot**.\nI'm Here to download your music.",
         reply_markup=InlineKeyboardMarkup(button),
     )
-CONNECT = {1,2,3}
+CONNECT = {}
 
 @ Mbot.on_callback_query(filters.regex(r"connectwithus"))
 async def help_home(_, query):
     button = [
-        [InlineKeyboardButton(text=i, callback_data=f"help_{i}")] for i in CONNECT
+        [InlineKeyboardButton(text=i, callback_data=f"connectwithus{i}")] for i in CONNECT
     ]
     await query.message.edit(
         f"You can connect via mail at anshulgada05@gmail.com",
