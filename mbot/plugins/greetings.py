@@ -41,6 +41,12 @@ async def start(client, message):
                 text="Repo", url="https://github.com/Anshulgada/spotify-downloader-bot"
             ),
             InlineKeyboardButton(text="Help", callback_data="helphome"),
+
+            InlineKeyboardButton
+                (
+                text="Connect with us", url="https://github.com/Anshulgada/spotify-downloader-bot"
+            ),
+            InlineKeyboardButton(text="Help", callback_data="helphome"),
         ],
     ]
     if LOG_GROUP:
