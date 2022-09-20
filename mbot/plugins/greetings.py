@@ -145,10 +145,8 @@ CONNECT = {}
 
 @ Mbot.on_callback_query(filters.regex(r"connectwithus"))
 async def help_home(_, query):
-    button = [
-        [InlineKeyboardButton(text=i, callback_data=f"connectwithus{i}")] for i in CONNECT
-    ]
-    await query.message.edit(
+    await query.message.edit\
+    (
         f"You can connect via mail at anshulgada05@gmail.com",
-        reply_markup=InlineKeyboardMarkup(button),
+        reply_markup=InlineKeyboardMarkup(),
     )
