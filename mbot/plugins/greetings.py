@@ -14,7 +14,7 @@ copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+FITNESS FOR A PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
@@ -33,20 +33,14 @@ from mbot import AUTH_CHATS, LOG_GROUP, OWNER_ID, SUDO_USERS, Mbot
 
 @Mbot.on_message(filters.command("start"))
 async def start(client, message):
-    reply_markup = [
+    reply_markup = \
+    [
         [
-            InlineKeyboardButton(
-                text="Bot Channel", url="https://t.me/TheCrowClub"
-            ),
-            InlineKeyboardButton(
-                text="Repo", url="https://github.com/rozari0/NeedMusicRobot"
+            InlineKeyboardButton
+            (
+                text="Repo", url="https://github.com/Anshulgada/spotify-downloader-bot"
             ),
             InlineKeyboardButton(text="Help", callback_data="helphome"),
-        ],
-        [
-            InlineKeyboardButton(
-                text="Donate", url="https://www.buymeacoffee.com/rozario"
-            ),
         ],
     ]
     if LOG_GROUP:
@@ -71,7 +65,7 @@ async def start(client, message):
             reply_markup=InlineKeyboardMarkup(reply_markup),
         )
     return await message.reply_text(
-        f"Hello {message.from_user.first_name}, I'm a Simple Music Downloader Bot. I Currently Support Download from Youtube.",
+        f"Hello {message.from_user.first_name}, I'm a Simple Music Downloader Bot. I Currently Support Download from Spotify & Youtube only.",
         reply_markup=InlineKeyboardMarkup(reply_markup),
     )
 
@@ -97,7 +91,8 @@ async def ping(client, message):
     await message.reply_text(f"**Pong!**\nResponse time: `{ms} ms`")
 
 
-HELP = {
+HELP = \
+{
     "Youtube": "Send **Youtube** Link in Chat to Download Song.",
     "Spotify": "Send **Spotify** Track/Playlist/Album/Show/Episode's Link. I'll Download It For You.",
     "Deezer": "Send Deezer Playlist/Album/Track Link. I'll Download It For You.",

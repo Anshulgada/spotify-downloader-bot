@@ -7,8 +7,8 @@
     "music downloader"
   ],
   "repository": "https://github.com/Anshulgada/Spotify-Downloader-Bot",
-  "website": "https://t.me/NeedMusicRobot",
-  "success_url": "https://t.me/NeedMusicRobot",
+//  "website": "https://t.me/NeedMusicRobot",
+//  "success_url": "https://t.me/NeedMusicRobot",
   "env":
   {
     "API_ID":
