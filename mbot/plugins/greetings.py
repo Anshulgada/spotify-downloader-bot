@@ -42,11 +42,13 @@ async def start(client, message):
             ),
             InlineKeyboardButton(text="Help", callback_data="helphome"),
 
-            InlineKeyboardButton
-                (
-                text="Connect with us", url="https://github.com/Anshulgada/spotify-downloader-bot"
-            ),
-            InlineKeyboardButton(text="Help", callback_data="helphome"),
+            # InlineKeyboardButton
+            #     (
+            #     text="Connect with us", url=""
+            # ),
+
+            InlineKeyboardButton(text="Connect with us", callback_data="connectwithus"),
+
         ],
     ]
     if LOG_GROUP:
@@ -137,5 +139,15 @@ async def help_home(_, query):
     ]
     await query.message.edit(
         f"Hello **{query.from_user.first_name}**, I'm **@MagSpotifyBot**.\nI'm Here to download your music.",
+        reply_markup=InlineKeyboardMarkup(button),
+    )
+
+@ Mbot.on_callback_query(filters.regex(r"connectwithus"))
+async def help_home(_, query):
+    button = [
+        [InlineKeyboardButton(text=i, callback_data=f"help_{i}")] for i in HELP
+    ]
+    await query.message.edit(
+        f"You can connect via mail at anshulgada05@gmail.com",
         reply_markup=InlineKeyboardMarkup(button),
     )
