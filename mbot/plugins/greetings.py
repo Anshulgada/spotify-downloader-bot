@@ -26,7 +26,7 @@ from os import execvp, sys
 
 from pyrogram import filters
 from pyrogram.raw.functions import Ping
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputTextMessageContent
 
 from mbot import AUTH_CHATS, LOG_GROUP, OWNER_ID, SUDO_USERS, Mbot
 
@@ -144,9 +144,9 @@ async def help_home(_, query):
 CONNECT = {}
 
 @ Mbot.on_callback_query(filters.regex(r"connectwithus"))
-async def help_home(_, query):
+async def connectwithus(_, query):
+    message_text = "You can connect via mail at anshulgada05@gmail.com"
     await query.message.edit\
     (
-        f"You can connect via mail at anshulgada05@gmail.com",
-        reply_markup=InlineKeyboardMarkup(),
+        reply_markup=InputTextMessageContent(message_text),
     )

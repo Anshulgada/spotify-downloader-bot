@@ -71,8 +71,9 @@ class Mbot(Client):
             sleep_threshold=30,
         )
 
+    # global BOT_INFO
     async def start(self):
-        global BOT_INFO
+
         await super().start()
         BOT_INFO = await self.get_me()
         if not path.exists("/tmp/thumbnails/"):
