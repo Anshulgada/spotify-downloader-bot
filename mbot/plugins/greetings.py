@@ -147,10 +147,10 @@ CONNECT = {}
 async def connectwithus(_, query):
     message_text = "You can connect via mail at anshulgada05@gmail.com"
     buttons = [
-        [InlineKeyboardButton(text=message_text)]]
+        [InlineKeyboardButton(callback_data=f"message_text")]]
 
     await query.message.edit\
     (
-        reply_markup=InlineKeyboardMarkup(buttons),
-        # reply_markup=InputTextMessageContent(message_text),
+        # reply_markup=InlineKeyboardMarkup(buttons),
+        reply_markup=InputTextMessageContent(message_text),
     )
