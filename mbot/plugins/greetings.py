@@ -145,10 +145,7 @@ CONNECT = {}
 
 @ Mbot.on_callback_query(filters.regex(r"connectwithus"))
 async def connectwithus(_, query):
-    message_text = "You can connect via mail at anshulgada05@gmail.com"
-
     await query.message.edit\
     (
-        f"Hello, **{message_text}**!",
-        reply_markup=InputTextMessageContent(message_text),
+        reply_markup=InputTextMessageContent("You can connect via mail at anshulgada05@gmail.com"),
     )

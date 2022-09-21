@@ -24,6 +24,11 @@ SOFTWARE.
 from os import mkdir, path
 from mbot import Mbot
 
+# #!/usr/bin/python
+# import sqlite3
+# conn = sqlite3.connect('test.db')
+# print ("Opened database successfully")
+
 if __name__ == "__main__":
     if not path.exists("cache"):
         mkdir("cache")
